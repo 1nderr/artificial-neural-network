@@ -4,7 +4,7 @@ This is an artificial neural network built from scratch. It uses a sigmoid activ
 
 ## Usage
 
-`python3 ann.py`
+`uv run ann.py`
 
 You will be prompted to give the number of layers, and the number of nodes for each layer.
 
@@ -19,6 +19,8 @@ You will be prompted to give the number of layers, and the number of nodes for e
 - `matplotlib`
 - `seaborn`
 - `pandas`
+
+The dependencies are managed with [uv](https://docs.astral.sh/uv/), which installs them on the first `uv run`.
 
 ## Hyper Parameters
 

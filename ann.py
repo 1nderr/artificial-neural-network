@@ -27,8 +27,8 @@ def parse_yale_faces():
     :return: `np.ndarray` the image data
     """
     data_matrix = []
-    yale_faces = [i for i in listdir(
-        YALE_PATH) if isfile(join(YALE_PATH, i))]
+    yale_faces = sorted(i for i in listdir(
+        YALE_PATH) if isfile(join(YALE_PATH, i)))
 
     for face in yale_faces:
         try:
